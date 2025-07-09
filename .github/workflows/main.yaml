@@ -57,8 +57,8 @@ jobs:
       # - name: Build Linux
       #   run: flutter build linux
 
-      - name: Build Windows
-        run: flutter build windows
+      # - name: Build Windows
+      #   run: flutter build windows
 
       - name: Push to GitHub Releases
         uses: ncipollo/release-action@v1
@@ -68,7 +68,7 @@ jobs:
             build/ios/iphoneos/app.ipa,
             build/web/**,
             build/macos/Build/Products/Release/*.app,
-            build/linux/**,
-            build/windows/**/Runner.exe
+      #      build/linux/**,
+      #      build/windows/**/Runner.exe
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKEN }}
