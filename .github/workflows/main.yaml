@@ -54,8 +54,8 @@ jobs:
       - name: Build macOS
         run: flutter build macos
 
-      - name: Build Linux
-        run: flutter build linux
+      # - name: Build Linux
+      #   run: flutter build linux
 
       - name: Build Windows
         run: flutter build windows
